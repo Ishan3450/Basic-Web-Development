@@ -1,0 +1,44 @@
+*{
+    background-color: rgb(143, 143, 143);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 6px;
+}
+.main_content {
+    border: 1px solid black;
+    margin: 150px 300px 150px 300px;
+    background-color:indianred;
+}
+.main_content *{
+    background-color:indianred;
+}
+hr{
+    border: 1px solid black;
+}
+h3{
+    text-align: center;
+    font-size: xx-large;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+ textarea{
+    border: 1px solid black;
+    width: 100%;
+ }
+form{
+    padding: 10px;
+}
+::placeholder{
+    color: black;
+}
+input[type="submit"]{
+    border: 1px solid black;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: cadetblue;
+}
+ 

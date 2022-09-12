@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms on HTML Page</title>
+    </head>
+    <body>
+        <!--form tag will be used for making Form in html-->
+        <!--enctype is attribute wich is used for submitting form-->
+        <form enctype="multipart/form-data">
+            <div>
+                Name:
+                <!--there are so many types ofinput tags with different attribute-->
+                <!--value tag is used for default value in input type-->
+                <!--readonly attribute is used that no any changes will be done after using this attribute-->
+                <!--disabled attribute is used for disabling any input type-->
+                <input type="text" value="Ishan" readonly disabled>
+            </div>
+            <div>
+                Name:
+                <br>
+                <!---->
+                <!--place holder is a attribute wich is used to give hint to user-->
+                <!--required attribute is used to make a field or input ype compulsary-->
+                 <!--autofocus is a type of attribute used when user refresh a page the the input will start from the tag here autofocus attribute will be used-->
+                 <!--autocomplete is an attribute that sugggest you accourding to your previous input while submitting-->
+                <input type="text" placeholder="Enter Name" required autofocus autocomplete="on/off">
+            </div>
+            <div>
+                Required Attribute:
+                <br>
+                <input type="text" reauired placeholder="compulsary to fill">
+            </div>
+            <div>
+                <br>
+                <input type="submit" value="Submit Form">
+            </div>
+            <div>
+                Max Lenght and Size:
+                <br>
+                <!--size attribute will be used that you can enter infinite charactesr but can only see selected size characters-->
+                <!--maxlength will be used for entering specific number characters-->
+                <input type="text" maxlength="20" size="50">
+            </div>
+            <div>
+                Age:
+                <br>
+                <!--max and min are attributes used for no less that minimum and no more than maximum-->
+                <input type="number" min="10" max="50">
+            </div>
+            <div>
+                <br>
+                Colour:
+                <input type="color" disabled>
+            </div>
+            <div>
+                <br>
+                Date:
+                <input type="date">
+            </div>
+            <div>
+                <br>
+                Mail:
+                <input type="email">
+            </div>
+            <div>
+                <br>
+                Hidden:
+                <!--Hidden tag is useful for developer not for used as ig you got a location of the form filler and you didn't want to know the user then by using hidden tag user will not get any clue and after submttion you willget the value passed in hidden tag-->
+                <input type="hidden" value="Gujrat">
+            </div>
+            <div>
+                <br>
+                Number:
+                <!--value attribute is used for the starting ange and step attribute is used for increasing value-->
+                <input type="number" value="0" step="5">
+            </div>
+            <div>
+                <br>
+                Password:
+                <input type="password">
+            </div>
+            <div>
+                <br>
+                Reset:
+                <input type="reset">
+            </div>
+            <div>
+                <br>
+                Time:
+                <input type="time">
+            </div>
+            <div>
+                <br>
+                url:
+                <input type="url">
+            </div>
+            <div>
+                <br>
+                Range:
+                <!--range is sued in mainly in ecommerec website with two attribute min and max-->
+                <input type="range" min="500" max="5000">
+            </div>
+            <div>
+                <br>
+                File:
+                <!--bu using only file inut type only 1 file will be submitted at a time-->
+                <!--for multiple file uploading you have to use multiple attribute-->
+                <input type="file" multiple>
+            </div>
+            <div>
+                Feedback:
+                <br>
+                <!--textarea is used for writing multiple lines-->
+                <!--the words written between starting and ending tag will be displayed by default-->
+                <textarea rows="5" cols="50" placeholder="Description" >Answer</textarea>
+                <!--as here input ype image is used it will work as submit button-->
+                <input type="image" src="submit.jpg" height="50" width="100">
+            </div>
+            <!--select tag is used for making dropdown box-->
+            <!--size attribute will be used for displaying minimum options-->
+            <select size="3" multiple>
+                <!--optgroup will be used for making group of options with name-->
+                <optgroup label="Cars">
+                <!--selected attribute will be used for making option selected by default and after refreshing webpae that selected option will be displayed-->
+                <option value="Audi" selected>Audi</option>
+                <option value="Maruti">Maruti</option>
+                <option value="Ciaz">Ciaz</option>
+                </optgroup>
+                <optgroup label="Sports">
+                <option value="Hockey">Hockey</option>
+                <option value="Cricket">Cricket</option>
+                <option value="Volleyball">Volleyball</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <!--radio button is basically used for selecting multiple or single option-->
+            <!--value attribute is used while submitting the form and mainly it is useful for backend developer-->
+            <!--for single select you have to make name same of the inpput type which you want to select one-->
+            <!--for multiple you did not have to use name attribute-->
+            <input type="radio" name="gender" value="Male">Male
+            <!--for making by default select option check attribute will be used-->
+            <input type="radio" name="gender" value="Female" checked>Female
+            <input type="radio" name="gender" value="Other">Other
+            <br><br>
+            <input type="radio" name="emp" value="Web Developer" checked>Web Developer
+            <input type="radio" name="emp" value="App Developer">App Developer
+
+            <!--checkbox is used for making proper multiple choice-->
+            <br><br>
+            <input type="checkbox" name="sports">Cricket
+            <input type="checkbox" name="sports">Volleyball
+            <input type="checkbox" name="sports">Badminton
+
+            <br><br><br>
+            <!--for making data list you need a text box-->
+            <!--list attribute connects datalist named id-->
+            <input type="text" list="search">
+            <!--here id is named as search and will be connected to the main input tag with list attribute-->
+            <!--datalist tag will be used for making datalist-->
+            <datalist id="search">
+                 <option value="Apple">
+                 <option value="Mango">
+                 <option value="Banana">
+                 <option value="Car">
+            </datalist>
+            <input type="submit" value="Search">
+            <!--fieldset is used for grouping input fields and with data types-->
+            <fieldset>
+                <br>
+                <!--label tag will be used for making labels and in label tag for attribute is used to connect id of input type-->
+                <!--below fname id is connected with label tag-->
+                <!--legend tag is used to give name or information to different field Sets-->
+                <legend>Basic Information</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" name="first_name" id="fname">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="last_name" id="lname">
+            </fieldset>
+            <fieldset>
+                <legend>Other Information</legend>
+                <label for="mpbile">Mobile Number:</label>
+                <input type="text" name="mobile" id="fname">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="lname">
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Submit">
+            </fieldset>
+        <p>Various input types in HTML are lested Below</p>
+        <img src="inputtypes.PNG" alt="">
+        
+        
+                
+        </form>
+    </body>
+</html>

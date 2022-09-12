@@ -1,0 +1,25 @@
+h1.nameOfWebsite{
+    text-align: center;
+    font-size: 75px;
+    background-color: tomato;
+    padding: 50px;
+    font-family:'Courier New', Courier, monospace;
+    border: 5px solid black;
+  }
+nav{
+    background-color: black;
+    padding: 10px;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;    
+    overflow: hidden;
+  }
+nav a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+nav a:hover{
+    color: tomato;
+}
+ 
